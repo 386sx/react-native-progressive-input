@@ -29,7 +29,7 @@ class ProgressiveInput extends Component {
 
   static defaultProps = {
     editable: true,
-    clearButtonIcon: 'ios-close-circle',
+    clearButtonIcon: 'close',
     clearButtonColor: 'lightgrey',
     clearButtonSize: 20,
     underlineColorAndroid: 'transparent',
