@@ -6,6 +6,7 @@ import {
   ActivityIndicator,
   TouchableOpacity,
   StyleSheet,
+  ViewPropTypes
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -14,12 +15,12 @@ class ProgressiveInput extends Component {
     ...TextInput.propTypes,
     value: PropTypes.string,
     isLoading: PropTypes.bool,
-    textInputStyle: TextInput.propTypes.style,
+    textInputStyle: ViewPropTypes.style,
     clearButtonIcon: PropTypes.string,
     clearButtonColor: PropTypes.string,
     clearButtonSize: PropTypes.number,
     clearButtonStyle: PropTypes.object,
-    activityIndicatorStyle: ActivityIndicator.propTypes.style,
+    activityIndicatorStyle: ViewPropTypes.style,
     onBlur: PropTypes.func,
     onChangeText: PropTypes.func,
     onFocus: PropTypes.func,
